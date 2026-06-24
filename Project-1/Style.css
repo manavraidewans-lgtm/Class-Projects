@@ -9,7 +9,8 @@
     height: 45rem;
     width: 100%;
     margin-top: 5rem;
-    border: 2px solid black;
+    background-color: #f9f9f9;
+    border: solid 1px #ebebeb;
 }
 
 .header {
@@ -43,8 +44,8 @@
     display: flex;
     justify-content: end;
     align-items: center;
-    gap: 2rem;
-    padding-right: 5rem;
+    gap: 1.5rem;
+    padding-right: 3rem;
     margin-bottom: 4rem;
 }
 
@@ -72,10 +73,12 @@
 }
 
 .card-border {
-    height: 28rem;
-    width: 26rem;
+    height: 30rem;
+    width: 24rem;
     margin: 2.3rem 0;
     border-radius: 18px;
+    border: 1px solid #ebebeb;
+    box-shadow: 8px 8px 8px #e5d5d5;
 }
 
 .card-pic {
@@ -83,14 +86,16 @@
     width: 100%;
     border-top-left-radius: 18px;
     border-top-right-radius: 18px;
-    background-color: aqua;
-    
+    background-image: url("Assets/1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .card-content {
     height: 40%;
     width: 100%;
-    background-color: cadetblue;
+    background-color: #f9f9f9;
     border-bottom-left-radius: 14px;
     border-bottom-right-radius: 14px;
 }
@@ -131,4 +136,12 @@
     font-size: 1.1rem;
     line-height: 1.6rem;
     padding: 0 1rem;
+}
+
+.card-pic-2 {
+    background-image: url("Assets/2.jpg");
+}
+
+.card-pic-3 {
+    background-image: url("Assets/3.jpg");
 }
