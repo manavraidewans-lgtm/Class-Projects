@@ -145,3 +145,60 @@
 .card-pic-3 {
     background-image: url("Assets/3.jpg");
 }
+
+
+
+
+/* I have taken some of  the CSS file from above in this part to save time and made code readable and small soo it will load fast. */
+
+
+/*   Part 2   */
+
+.card-1 {
+    height: 33rem;
+    width: 24rem;
+    background-color: #e5d5d5;
+    border-radius: 18px;
+    border: 1px solid #b0b0b0;
+    padding: 1.1rem 0.7rem;
+}
+
+.card-1-pic {
+    height: 50%;
+    width: 100%;
+    border-radius: 18px;
+    background-image: url("Assets/mountain\ 1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 1.5rem;
+}
+
+.card-heading {
+    height: 15%;
+    width: 100%;
+    line-height: 1rem;
+    margin-top: 3rem;
+    padding: 0 0.7rem;
+}
+
+.card-contents {
+    height: 25%;
+    width: 100%;
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.info {
+    height: 100%;
+    width: 50%;
+    background-color: antiquewhite;
+}
+
+.rating {
+    height: 100%;
+    width: 50%;
+    background-color: burlywood;
+}
