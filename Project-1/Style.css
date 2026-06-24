@@ -185,7 +185,6 @@
 .card-contents {
     height: 25%;
     width: 100%;
-    background-color: aqua;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -200,5 +199,25 @@
 .rating {
     height: 100%;
     width: 50%;
-    background-color: burlywood;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 0.25rem;
+    text-align: end;
+    padding-right: 0.5rem;
 }
+
+.rating-icon {
+    display: inline-flex;
+    justify-content: end;
+    width: 100%;
+    gap: 0.2rem;
+}
+
+.rating-icon i {
+    color: goldenrod;
+    font-size: 1.1rem;
+}
+
+
