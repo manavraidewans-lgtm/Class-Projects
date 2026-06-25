@@ -6,11 +6,11 @@
 
 /*      Project 1       */
 #project-1 {
-    height: 45rem;
+    height: 48rem;
     width: 100%;
     margin-top: 5rem;
-    background-color: #f9f9f9;
-    border: solid 1px #ebebeb;
+    background-color: #fff;
+    border: solid 2px #ebebeb;
 }
 
 .header {
@@ -70,6 +70,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    margin-bottom: 2rem;
 }
 
 .card-border {
@@ -78,7 +79,7 @@
     margin: 2.3rem 0;
     border-radius: 18px;
     border: 1px solid #ebebeb;
-    box-shadow: 8px 8px 8px #e5d5d5;
+    box-shadow: 6px 6px 6px #f2eded;
 }
 
 .card-pic {
@@ -130,6 +131,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #f9f9f9;
 }
 
 .card-para p{
@@ -154,13 +156,22 @@
 
 /*   Part 2   */
 
+#project-2 {
+    height: 51rem;
+    width: 100%;
+    margin-top: 5rem;
+    background-color: #fff;
+    border: solid 2px #ebebeb;
+}
+
 .card-1 {
     height: 33rem;
     width: 25rem;
     border-radius: 18px;
-    border: 1px solid #b0b0b0;
+    border: 0.5px solid #c7c6c6;
     padding: 1.1rem 0.7rem;
     background-color: #ffffff;
+    box-shadow: 6px 6px 6px #c7c6c6;
 }
 
 .card-1-pic {
@@ -223,9 +234,7 @@
     width: 50%;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
     justify-content: center;
-    gap: 0.25rem;
     text-align: end;
     padding-right: 0.5rem;
 }
