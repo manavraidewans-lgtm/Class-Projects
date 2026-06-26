@@ -256,49 +256,120 @@ body {
 }
 
 .bar {
-    height: 100px;
+    height: 90px;
     width: 100%;
-    /* background-color: aqua; */
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
+    margin-top: 1rem;
 }
 
 .bar-inner {
-    height: 100%;
-    width: 80%;
-    background-color: burlywood;
-    border: 5px solid #CA7323;
-    border-radius: 10px;
+    height: 74px;
+    width: 82%;
+    background: linear-gradient(90deg, #fff8ef 0%, #ffffff 100%);
+    border: 3px solid #CA7323;
+    border-radius: 16px;
     position: absolute;
-    top: 65px;
+    top: 50px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    padding: 0 1.5rem;
+    padding: 0.8rem 1.2rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    gap: 1rem;
 }
 
 .drop-down {
     height: 100%;
-    width: 40%;
-    background-color: aqua;
+    width: 60%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 0.7rem;
+}
+
+.from,
+.to {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    flex: 1;
+}
+
+.from label,
+.to label,
+.date h4 {
+    color: #1D293F;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+.from input,
+.to input,
+.date input {
+    border: 1px solid #e8d8c3;
+    border-radius: 8px;
+    padding: 0.65rem 0.8rem;
+    font-size: 0.9rem;
+    outline: none;
+    background: #fff;
+}
+
+.mid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mid button {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    background-color: #CA7323;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .date {
     height: 100%;
-    width: 20%;
-    background-color: dodgerblue;
-    margin-left: 19rem;
+    width: 18%;
+    margin-left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.date input {
+    width: 100%;
 }
 
 .but {
     height: 100%;
-    width: 25%;
+    width: auto;
     display: flex;
     justify-content: end;
     align-items: center;
+}
+
+.but button {
+    height: 46px;
+    width: 46px;
+    background-color: #CA7323;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(202, 115, 35, 0.25);
+}
+
+.but button i {
+    font-size: 1.4rem;
+    color: #FFFFFF;
 }
