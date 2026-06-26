@@ -32,16 +32,17 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1rem;
-    color: black;
+    font-size: 14px;
+    color: #fff;
     margin-right: 2rem;
     gap: 0.2rem;
 }
 
 .nav-options span a {
-    color: #1D293F;
+    color: #fff;
     text-decoration: none;
     font-weight: 530;
+    font-size: 14px;
 }
 
 
@@ -94,8 +95,8 @@ body {
 
 .left ul li a {
     text-decoration: none;
-    color: #1D293F;
-    font-size: 1rem;
+    color: #fff;
+    font-size: 14px;
 }
 
 
@@ -113,6 +114,8 @@ body {
 .right span {
     background-color: #70707042;
     padding: 3px 6px;
+    color: #fff;
+    font-size: 14px;
 }
 
 
@@ -130,7 +133,7 @@ body {
     color: #FFFFFF;
     background-color: #CA7323;
     padding: 9px 11px;
-    font-size: 1rem;
+    font-size: 14px;
     border: none;
     border-radius: 8px;
 }
@@ -223,4 +226,55 @@ body {
     margin-right: 97px;
     height: 170px;
     margin-bottom: 95px;
+}
+
+.road span {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    margin-top: 9.5rem;
+    margin-right: 8.5rem;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 4.5rem;
+}
+
+.road span img {
+    margin: 0;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    z-index: 1;
+    left: -300px;
+}
+
+.road span p {
+    margin: 0;
+    color: #fff;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.bar {
+    height: 100px;
+    width: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.bar-inner {
+    height: 100%;
+    width: 80%;
+    background-color: burlywood;
+    border: 5px solid #CA7323;
+    border-radius: 10px;
+    position: absolute;
+    top: 65px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 1.5rem;
 }
