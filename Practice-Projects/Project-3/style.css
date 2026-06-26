@@ -278,3 +278,27 @@ body {
     align-items: center;
     padding: 0 1.5rem;
 }
+
+.drop-down {
+    height: 100%;
+    width: 40%;
+    background-color: aqua;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.date {
+    height: 100%;
+    width: 20%;
+    background-color: dodgerblue;
+    margin-left: 19rem;
+}
+
+.but {
+    height: 100%;
+    width: 25%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
