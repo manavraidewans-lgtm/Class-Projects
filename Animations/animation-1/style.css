@@ -1,5 +1,65 @@
 * {
     padding: 0;
     margin: 0;
+    /* overflow: hidden; */
 }
 
+.sky {
+    height: 100lvh;
+    width: 100%;
+    background-image: url(Assets/sky.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.road {
+    height: 32vh;
+    width: 500%;
+    background-image: url(Assets/road.jpg);
+    background-repeat: repeat-x;
+    background-size: cover;
+    position: absolute;
+    bottom: 0px;
+}
+
+.city {
+    height: 20vh;
+    width: 500%;
+    background-image: url(Assets/city.png);
+    background-repeat: repeat-x;
+    background-size: contain;
+    position: relative;
+    bottom: 160px;
+}
+
+.car {
+    height: 21vh;
+    width: 100%;
+    background-image: url(Assets/car.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    bottom: 150px;
+    left: 500px;
+}
+
+.wheels {
+    height: 9.7vh;
+    width: 100%;
+    background-image: url(Assets/wheel.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    bottom: 310px;
+    left: 535px;
+}
+
+
+.right {
+    left: 533px;
+}
+
+.left {
+    left: 780px;
+    bottom: 233px;
+}
