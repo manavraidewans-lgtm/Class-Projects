@@ -1,4 +1,81 @@
 * {
     padding: 0;
     margin: 0;
+    overflow: hidden;
+}
+
+.sky {
+    height: 75vh;
+    width: 100%;
+    background-image: url(Assets/sky.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.road {
+    height: 25vh;
+    width: 500%;
+    background-image: url(Assets/road.jpg);
+    background-repeat: repeat-x;
+    background-size: cover;
+    position: absolute;
+    animation: road 9s linear infinite;
+}
+
+.city {
+    height: 20vh;
+    width: 500%;
+    background-image: url(Assets/city.png);
+    background-repeat: repeat-x;
+    background-size: contain;
+    position: relative;
+    bottom: 160px;
+    animation: road 9s linear infinite;
+}
+
+.bus {
+    height: 21vh;
+    width: 100%;
+    background-image: url(Assets/bus.gif);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    bottom: 150px;
+    left: 500px;
+}
+
+
+.plane {
+    height: 10vh;
+    width: 500%;
+    background-image: url(Assets/flight\ 1.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: 900px;
+    top: 100px;
+    animation: plane 4s linear infinite;
+}
+
+
+
+@keyframes plane {
+     0% {
+    transform: translateX(0);
+     }
+  50% {
+    transform: translateX(-100px); /* Move up */
+    }
+  100% {
+    transform: translateX(-80);
+    }
+}
+
+@keyframes road  {
+    0% {
+        transform: translateX(-60px);
+    }
+    100% {
+        transform: translateX(-1200px);
+    }
 }
