@@ -43,7 +43,7 @@
     position: relative;
     bottom: 150px;
     left: 500px;
-    animation: car 1s linear infinite;
+    animation: car 1s linear 4s ;
 }
 
 .wheels {
