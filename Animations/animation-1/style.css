@@ -45,14 +45,15 @@
 
 .wheels {
     height: 9.7vh;
-    width: 100%;
+    width: 9.7vh;
     background-image: url(Assets/wheel.png);
     background-repeat: no-repeat;
     background-size: contain;
     position: relative;
     bottom: 310px;
     left: 535px;
-}
+    animation: wheels 5s linear infinite;
+}   
 
 
 .right {
@@ -62,4 +63,14 @@
 .left {
     left: 780px;
     bottom: 233px;
+}
+
+
+@keyframes wheels {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
