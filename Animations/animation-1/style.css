@@ -43,7 +43,7 @@
     position: relative;
     bottom: 150px;
     left: 500px;
-    animation: car 1.5s linear infinite;
+    animation: car 1s linear infinite;
 }
 
 .wheels {
@@ -84,7 +84,7 @@
     transform: translateY(0);
      }
   50% {
-    transform: translateY(-20px); /* Move up */
+    transform: translateY(-30px); /* Move up */
     }
   100% {
     transform: translateY(0);
@@ -96,10 +96,7 @@
     0% {
         transform: translateX(-60px);
     }
-    50% {
-        transform: translateX(-200px);
-    }
     100% {
-        transform: translateX(-400px);
+        transform: translateX(-1200px);
     }
 }
