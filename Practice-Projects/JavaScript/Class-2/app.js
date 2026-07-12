@@ -15,6 +15,9 @@
 
 
 
+
+
+
 // // BUZZ NUMBER //
 
 // let buzznum = parseInt(prompt("Enter Num You wanna Check")) ;
@@ -24,5 +27,6 @@
 // } else {
 //     console.log("Num is not BUZZ");
 // }
+
 
 
