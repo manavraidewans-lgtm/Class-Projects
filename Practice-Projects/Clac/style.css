@@ -94,3 +94,6 @@ button {
     border: none;
 }
 
+#decimal {
+    font-size: 2rem;
+}
