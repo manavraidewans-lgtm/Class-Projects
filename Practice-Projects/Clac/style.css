@@ -85,7 +85,7 @@ body {
     height: 80%;
     width: 90%;
     border-radius: 20px;
-    background-color: cadetblue;
+    /* background-color: cadetblue; */
     display: grid;
     grid-template-rows: 85px 85px 85px 85px;
     grid-template-columns: 145px 145px 145px 145px 145px;
@@ -113,6 +113,10 @@ button {
 
 #clear {
     background-color: rgb(229, 50, 0);
+}
+
+.close {
+    background: transparent;
 }
 
 

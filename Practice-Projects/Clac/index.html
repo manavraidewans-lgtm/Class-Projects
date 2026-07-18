@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.2.0/css/all.min.css" integrity="sha512-F/yRpRY8sctKzP7exU5PLGejwg/QtjDX6CIy/41nApe7JqdZgCcCzJTNq9Rcp/XwbeeTGillGevBakruY15pxA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <div class="calc-outer">
+
+    <div class="calc-outer" id="calc-background">
         <div class="close">
             <button class="clo up-but">
                 <p>X</p>
@@ -16,7 +17,7 @@
         </div>
        <div class="upper">
         <div class="upper-display">
-            <input type="text" id="number" placeholder="0">
+            <input type="number" id="number" placeholder="0">
         </div>
        </div>
        <div class="lower">
@@ -38,13 +39,15 @@
             <button id="modulo" class="assing">%</button>
             <button id="9">9</button>
             <button id="0">0</button>
-            <button id="00">00</button>
+            <button id="change-color" onclick="changeColor()">change Color</button>
             <button id="decimal" class="assing">.</button>
             <button id="ans" class="assing">=</button>    
         </div>
        </div>
     </div>
 
+
+    <script src="logic.js"></script>
 </body>
 </html>
 
