@@ -7,6 +7,9 @@ let a = "";
 let b = "";
 let opr = "";
 
+
+let close_but = document.querySelector("#close-but")
+
 function changeColor() {
     const r = Math.floor(Math.random() * 255);
     const g = Math.floor(Math.random() * 255);
@@ -72,5 +75,6 @@ function clearDisplay() {
     opr = "";
     output.value = "";
 }
+
 
 changeColor();

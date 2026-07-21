@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        fieldset {
+            border: 3px solid; 
+        }
+
+        legend {
+            font-size: 3rem;
+            color: rgb(243, 24, 24);
+        }
+
+        body {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            margin-top: 6rem;
+        }
+
+        #input {
+            height: 36rem;
+            width: 25rem;
+            
+        }
+        
+        #input form {
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           flex-direction: column;
+        }
+
+        .input-outer {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            margin-top: 2rem;
+            font-size: 1.5rem;
+        }
+
+        form input {
+            width: 70%;
+            border-radius: 10px;
+            height: 2rem;
+            font-size: 1.5rem;
+            color: hotpink;
+        }
+
+         input {
+            width: 70%;
+            border-radius: 10px;
+            height: 2rem;
+            font-size: 1.5rem;
+            color: hotpink;
+        }
+
+        .submit-button {
+            width: 100%;
+            margin-top: 5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        button {
+            width: 80%;
+            font-size: 1.3rem;
+            border-radius: 20px;
+            border: 1px solid;
+        }
+       
+        #result {
+            height: 28rem;
+            width: 20rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 3rem;
+        }
+
+    </style>
+</head>
+<body>
+    
+ 
+    <fieldset id="input">
+    <legend>Students Details</legend>
+     <form action="#">
+
+    <div class="input-outer">
+        <label for="name">Name </label>
+    <input type="text" id="name" placeholder="name">
+    </div>
+
+    <div class="input-outer">
+    <label for="class">CLass </label>
+    <input type="text" id="class" placeholder="class">
+    </div>
+
+    <div class="input-outer">
+        <label for="phy">Phy</label>
+    <input type="text" id="phy" placeholder="phy">
+    </div>
+
+    <div class="input-outer"">
+        <label for="Chem">Chem </label>
+    <input type="text" id="Chem" placeholder="Chem">
+    </div>
+
+    <div class="input-outer">
+        <label for="Maths">Maths </label>
+    <input type="text" id="Maths" placeholder="maths">
+    </div>
+  </form>  
+
+    <div class="submit-button">
+        <button onclick="genResult()">Generate</button>
+    </div>
+
+ </fieldset>
+
+ 
+
+
+
+    <fieldset id="result">
+    <legend>Result</legend>
+    <div class="input-outer">
+    <label>Total :</label>
+    <input type="text" id="total" readonly>
+</div>
+
+<div class="input-outer">
+    <label>Avg :</label>
+    <input type="text" id="avg" readonly>
+</div>
+
+<div class="input-outer">
+    <label>Status :</label>
+    <input type="text" id="status" readonly>
+</div>
+</fieldset>
+
+
+</body>
+
+
+
+<script>
+function genResult() {
+
+   
+    let phyStr   = document.getElementById("phy").value;
+    let chemStr  = document.getElementById("Chem").value;
+    let mathsStr = document.getElementById("Maths").value;
+
+    
+    let phy   = Number(phyStr);
+    let chem  = Number(chemStr);
+    let maths = Number(mathsStr);
+
+    console.log(typeof(phy));
+    console.log(typeof(chem));
+    console.log(typeof(maths));
+
+    
+    if (
+        (phy < 0 || phy > 100 )||
+        (chem < 0 || chem > 100 )||
+        (maths < 0 || maths > 100)
+    ) {
+        alert("Invaild");
+        
+    }
+
+
+
+
+
+
+    // Calac
+    
+    let total = phy + chem + maths;
+    let avg   = total / 3;
+    let per   = (total / 300) * 100;
+
+    let status;
+
+    if (per < 33)
+        status = "Fail";
+    else if (per < 50)
+        status = "3rd Div";
+    else if (per < 70)
+        status = "2nd Div";
+    else if (per <= 90)
+        status = "1st Div";
+    else
+        status = "Distinct";
+
+    console.log(status);
+
+
+
+    // Output
+    document.getElementById("total").value  = total;
+    document.getElementById("avg").value    = avg.toFixed(2);
+    document.getElementById("status").value = status;
+}
+</script>
+</html>
