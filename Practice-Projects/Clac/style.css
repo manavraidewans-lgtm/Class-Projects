@@ -1,20 +1,22 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 body {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     background-color: rgb(12, 14, 14);
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 1rem;
 }
 
 .calc-outer {
-    width: 50%;
-    height: 80%;
+    width: min(92vw, 520px);
+    height: min(88vh, 760px);
     border-radius: 20px;
     border: 6px solid rgb(93, 93, 93);
     background-color: rgb(93, 93, 93);
@@ -25,25 +27,25 @@ body {
 
 .close {
     width: 100%;
-    height: 20px;
+    height: 28px;
     background-color: olive;
     overflow: hidden;
+    display: flex;
+    align-items: center;
 }
 
 .upper {
-    height: 35%;
+    height: 30%;
     width: 100%;
-    /* background-color: rgb(120, 127, 127); */
     display: flex;
     justify-content: center;
     align-items: end;
+    padding: 0.8rem;
 }
 
 .upper-display {
-    padding: 1rem;
-    height: 60%;
-    width: 90%;
-    /* background-color: rgb(121, 99, 184); */
+    height: 100%;
+    width: 100%;
     border-radius: 20px;
     display: flex;
     justify-content: end;
@@ -51,18 +53,18 @@ body {
 }
 
 .upper-display input {
-    height: 47%;
+    height: 70%;
     width: 100%;
     backdrop-filter: blur(9px);
     background: transparent;
     border: 1px solid rgb(133, 133, 133);
     border-radius: 20px;
-
-    text-align: right;    /* Typed text starts from left */
-    direction: rtl;      /* Left-to-right typing */
-    font-size: 24px;
+    text-align: right;
+    direction: rtl;
+    font-size: clamp(1.1rem, 2.2vw, 1.6rem);
     color: white;
     outline: none;
+    padding: 0 1rem;
 }
 
 .upper-display input::placeholder {
@@ -70,42 +72,40 @@ body {
     color: rgb(180, 180, 180);
 }
 
-
 .lower {
-    height: 65%;
+    height: 70%;
     width: 100%;
-    /* background-color: darkcyan; */
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 0.8rem 0.8rem 1rem;
 }
 
 .lower-buttons {
-    padding: 1rem;
-    height: 80%;
-    width: 90%;
+    width: 100%;
+    height: 100%;
     border-radius: 20px;
-    /* background-color: cadetblue; */
     display: grid;
-    grid-template-rows: 85px 85px 85px 85px;
-    grid-template-columns: 145px 145px 145px 145px 145px;
+    grid-template-rows: repeat(4, minmax(0, 1fr));
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 0.6rem;
 }
-
 
 button {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 75px;
-    width: 75px;
+    width: 100%;
+    aspect-ratio: 1;
     border-radius: 50%;
     border: none;
+    font-size: clamp(0.9rem, 1.8vw, 1.2rem);
+    cursor: pointer;
 }
 
 #decimal {
-    font-size: 2rem;
+    font-size: 1.8rem;
 }
-
 
 #back {
     background-color: rgb(119, 30, 6);
@@ -119,18 +119,14 @@ button {
     background: transparent;
 }
 
-
 .clo {
     display: flex;
     justify-content: center;
     align-items: center;
-     height: 20px;
+    height: 20px;
     width: 20px;
     border-radius: 50%;
     font-size: 1rem;
-    display: flex;
-    justify-content: start;
-    align-items: center;
     background-color: red;
     margin-left: 1rem;
 }
@@ -141,4 +137,48 @@ button {
     align-items: center;
     text-align: center;
     font-size: 0.8rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 600px) {
+    body {
+        padding: 0.5rem;
+    }
+
+    .calc-outer {
+        width: 100%;
+        height: 100vh;
+        border-radius: 0;
+        border: none;
+    }
+
+    .lower-buttons {
+        gap: 0.45rem;
+    }
+
+    button {
+        border-radius: 999px;
+    }
+}
+
+@media (max-height: 700px) {
+    .upper {
+        padding: 0.4rem 0.8rem 0;
+    }
+
+    .lower {
+        padding: 0.4rem 0.8rem 0.8rem;
+    }
 }
